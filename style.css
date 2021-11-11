@@ -283,5 +283,17 @@ body {
   .calculator {
     width: 327px;
   }
+  .input--box {
+    -ms-grid-columns: (65px)[4];
+        grid-template-columns: repeat(4, 65px);
+  }
+  .input--box button {
+    height: 64px;
+    width: 60px;
+  }
+  .input--box .span--two {
+    grid-column: span 2;
+    width: 113px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -277,4 +277,15 @@ body {
     .calculator {
         width: 327px;
     }
+    .input--box {
+        grid-template-columns: repeat(4, 65px);
+        button {
+            height: 64px;
+            width: 60px;
+        }
+        .span--two {
+            grid-column: span 2;
+            width: 113px;
+        }
+    }
 }
