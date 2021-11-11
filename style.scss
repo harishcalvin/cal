@@ -274,10 +274,18 @@ body {
 }
 
 @media(max-width: 575px) {
+    body {
+        // height: 100vh;
+    }
     .calculator {
+        margin-top: 20px;
         width: 327px;
     }
+    .output--box {
+        margin-top: 10px;
+    }
     .input--box {
+        margin-top: 10px;
         grid-template-columns: repeat(4, 65px);
         button {
             height: 64px;

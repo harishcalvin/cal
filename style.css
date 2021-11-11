@@ -281,9 +281,14 @@ body {
 
 @media (max-width: 575px) {
   .calculator {
+    margin-top: 20px;
     width: 327px;
   }
+  .output--box {
+    margin-top: 10px;
+  }
   .input--box {
+    margin-top: 10px;
     -ms-grid-columns: (65px)[4];
         grid-template-columns: repeat(4, 65px);
   }
