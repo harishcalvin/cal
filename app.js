@@ -13,7 +13,7 @@ function themeswitch(e) {
         body.classList.add('theme--1');
     } else if (e.target === theme2) {
         // console.log('theme two changed');
-        body.classList.remove('theme--1', 'theme--2')
+        body.classList.remove('theme--1', 'theme--3')
         body.classList.add('theme--2');
     } else if (e.target === theme3) {
         // console.log('theme three changed')
