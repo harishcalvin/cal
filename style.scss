@@ -9,6 +9,7 @@ $c-white: #ffffff;
 //c-theme1
 $c-thm1-background: #3A4663;
 $c-pri-btn-bg: #EAE3DC;
+$c-pri-btn-bg-act: #FFFFFE;
 $c-pri-btn-bs: #B3A497;
 $c-pri-btn-txt: #434A59;
 $c-sec-btn-bg: #647198;
@@ -56,6 +57,7 @@ body {
     margin: auto;
     width: 100%;
     height: 100vh;
+    transition: background-color 0.2s linear;
 }
 
 .calculator {
@@ -145,10 +147,13 @@ body {
         height: 64px;
         width: 101px;
         border-radius: 10px;
-        // outline: none;
         border: none;
         font-size: 32px;
         font-weight: 700;
+        cursor: pointer;
+    }
+    button:active {
+        transform: translateY(3px);
     }
     .span--two {
         grid-column: span 2;
@@ -181,15 +186,24 @@ body {
             background-color: $c-pri-btn-bg;
             box-shadow: 0px -4px 0px 0px $c-pri-btn-bs inset;
         }
+        button:active {
+            background-color: $c-pri-btn-bg-act;
+        }
         .sec--btn {
             color: $c-white;
             background-color: $c-sec-btn-bg;
             box-shadow: 0px -4px 0px 0px $c-sec-btn-bs inset;
         }
+        .sec--btn:active {
+            background-color: $c-sec-btn-bg-act;
+        }
         .equal--btn {
             background-color: $c-ter-btn-bg;
             color: $c-white;
             box-shadow: 0px -4px 0px 0px $c-ter-btn-bs inset;
+        }
+        .equal--btn:active {
+            background-color: $c-ter-btn-bg-act;
         }
     }
 }
@@ -216,15 +230,24 @@ body {
             background-color: $c-thm2-pri-btn-bg;
             box-shadow: 0px -4px 0px 0px $c-thm2-pri-btn-bs inset;
         }
+        button:active {
+            background-color: $c-thm2-pri-btn-act;
+        }
         .sec--btn {
             color: $c-white;
             background-color: $c-thm2-sec-btn-bg;
             box-shadow: 0px -4px 0px 0px $c-thm2-sec-btn-bs inset;
         }
+        .sec--btn:active {
+            background-color: $c-thm2-sec-btn-act;
+        }
         .equal--btn {
             color: $c-white;
             background-color: $c-thm2-ter-btn-bg;
             box-shadow: 0px -4px 0px 0px $c-thm2-ter-btn-bs inset;
+        }
+        .equal--btn:active {
+            background-color: $c-thm2-ter-btn-act;
         }
     }
 }
@@ -253,15 +276,24 @@ body {
             background-color: $c--thm3--pri--btn--bg;
             box-shadow: 0px -4px 0px 0px $c--thm3--pri--btn--bs inset;
         }
+        button:active {
+            background-color: $c--thm3--pri--btn--act;
+        }
         .sec--btn {
             color: $c-white;
             background-color: $c--thm3--sec--btn--bg;
             box-shadow: 0px -4px 0px 0px $c--thm3--sec--btn--bs inset;
         }
+        .sec--btn:active {
+            background-color: $c--thm3--sec--btn--act;
+        }
         .equal--btn {
             color: $c-white;
             background-color: $c--thm3--ter--btn--bg;
             box-shadow: 0px -4px 0px 0px $c--thm3--ter--btn--bs inset;
+        }
+        .equal--btn:active {
+            background-color: $c--thm3--ter--btn--act;
         }
     }
 }
