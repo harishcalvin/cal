@@ -1,331 +1,331 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 //colors
 $c-white: #ffffff;
 //c-theme1
-$c-thm1-background: #3A4663;
-$c-pri-btn-bg: #EAE3DC;
-$c-pri-btn-bg-act: #FFFFFE;
-$c-pri-btn-bs: #B3A497;
-$c-pri-btn-txt: #434A59;
+$c-thm1-background: #3a4663;
+$c-pri-btn-bg: #eae3dc;
+$c-pri-btn-bg-act: #fffffe;
+$c-pri-btn-bs: #b3a497;
+$c-pri-btn-txt: #434a59;
 $c-sec-btn-bg: #647198;
-$c-sec-btn-bg-act: #A2B2E1;
-$c-sec-btn-bs: #414E73;
-$c-ter-btn-bg: #D03F2F;
-$c-ter-btn-bg-act: #F96B5B;
-$c-ter-btn-bs: #93261A;
-$c-main: #242D44;
-$c-sec:#181F33;
+$c-sec-btn-bg-act: #a2b2e1;
+$c-sec-btn-bs: #414e73;
+$c-ter-btn-bg: #d03f2f;
+$c-ter-btn-bg-act: #f96b5b;
+$c-ter-btn-bs: #93261a;
+$c-main: #242d44;
+$c-sec: #181f33;
 //c-theme2
-$c-thm2-background: #E6E6E6;
-$c-thm2-pri-btn-bg:#E5E4E1;
-$c-thm2-pri-btn-bs:#A79E91;
-$c-thm2-pri-btn-act: #FFFFFF;
-$c-thm2--pri-btn-txt:#36362C;
-$c-thm2-sec-btn-bg:#378187;
-$c-thm2-sec-btn-bs:#1B6066;
-$c-thm2-sec-btn-act:#62B5BC;
-$c-thm2-ter-btn-bg: #C85402;
+$c-thm2-background: #e6e6e6;
+$c-thm2-pri-btn-bg: #e5e4e1;
+$c-thm2-pri-btn-bs: #a79e91;
+$c-thm2-pri-btn-act: #ffffff;
+$c-thm2--pri-btn-txt: #36362c;
+$c-thm2-sec-btn-bg: #378187;
+$c-thm2-sec-btn-bs: #1b6066;
+$c-thm2-sec-btn-act: #62b5bc;
+$c-thm2-ter-btn-bg: #c85402;
 $c-thm2-ter-btn-bs: #873901;
-$c-thm2-ter-btn-act: #FF8A38;
-$c-thm2-main:#D2CDCD;
-$c-thm2-sec:#EEEEEE;
+$c-thm2-ter-btn-act: #ff8a38;
+$c-thm2-main: #d2cdcd;
+$c-thm2-sec: #eeeeee;
 //c-theme3
-$c--thm3--background: #17062A;
-$c--thm3--pri--btn--bg:#331C4D;
-$c--thm3--pri--btn--bs:#881C9E;
-$c--thm3--pri--btn--txt:#FFE53D;
-$c--thm3--pri--btn--act:#6C34AC;
-$c--thm3--sec--btn--bg:#56077C;
-$c--thm3--sec--btn--bs:#BE15F4;
-$c--thm3--sec--btn--act:#8631AF;
-$c--thm3--ter--btn--bg:#00DED0;
-$c--thm3--ter--btn--bs:#6CF9F1;
-$c--thm3--ter--btn--act:#93FFF8;
-$c--thm3--ter--btn--txt:#1A2327;
-$c--thm3--main:#1E0936;
-$c--thm3--sec:#1E0936;
+$c--thm3--background: #17062a;
+$c--thm3--pri--btn--bg: #331c4d;
+$c--thm3--pri--btn--bs: #881c9e;
+$c--thm3--pri--btn--txt: #ffe53d;
+$c--thm3--pri--btn--act: #6c34ac;
+$c--thm3--sec--btn--bg: #56077c;
+$c--thm3--sec--btn--bs: #be15f4;
+$c--thm3--sec--btn--act: #8631af;
+$c--thm3--ter--btn--bg: #00ded0;
+$c--thm3--ter--btn--bs: #6cf9f1;
+$c--thm3--ter--btn--act: #93fff8;
+$c--thm3--ter--btn--txt: #1a2327;
+$c--thm3--main: #1e0936;
+$c--thm3--sec: #1e0936;
 h1 {
-    color: red;
+  color: red;
 }
 
 body {
-    margin: auto;
-    width: 100%;
-    height: 100vh;
-    transition: background-color 0.2s linear;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  transition: background-color 0.2s linear;
 }
 
 .calculator {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    min-height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  min-height: 100vh;
 }
 
 .header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-top: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .txt-calc {
-    font-size: 32px;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .theme--slider--block {
-    display: flex;
-    .txt-theme {
-        font-size: 0.75rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-top: 20px;
-        padding-right: 5px;
-    }
+  display: flex;
+  .txt-theme {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-right: 5px;
+  }
 }
 
 .theme--select--number {
-    text-align: center;
-    letter-spacing: 10px;
-    font-weight: 700;
-    font-size: 0.75rem;
+  text-align: center;
+  letter-spacing: 10px;
+  font-weight: 700;
+  font-size: 0.75rem;
 }
 
 .theme--slider {
-    background-color: $c-main;
-    border-radius: 13px;
-    height: 26px;
-    width: 71px;
-    text-align: center;
-    padding: 5px 0px 5px 0px;
+  background-color: $c-main;
+  border-radius: 13px;
+  height: 26px;
+  width: 71px;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
 }
 
 .theme--slider input {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .output--box {
-    height: 100px;
-    border-radius: 10px;
-    margin-top: 22px;
-    text-align: right;
-    padding-right: 28px;
-    font-size: 2rem;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 22px;
+  text-align: right;
+  padding-right: 28px;
+  font-size: 2rem;
 }
 
 .output--value {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-top: 10px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 .input--value--exp {
-    opacity: .75;
+  opacity: 0.75;
 }
 
 .input--box {
-    height: 410px;
+  height: 410px;
+  border-radius: 10px;
+  margin-top: 24px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 100px);
+  column-gap: 1rem;
+  // align-content: center;
+  // grid-template-rows: minmax(120px, auto) repeat(5, 50px);
+  button {
+    height: 64px;
+    width: 101px;
     border-radius: 10px;
-    margin-top: 24px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(4, 100px);
-    column-gap: 1rem;
-    // align-content: center;
-    // grid-template-rows: minmax(120px, auto) repeat(5, 50px);
-    button {
-        height: 64px;
-        width: 101px;
-        border-radius: 10px;
-        border: none;
-        font-size: 32px;
-        font-weight: 700;
-        cursor: pointer;
-    }
-    button:active {
-        transform: translateY(3px);
-    }
-    .span--two {
-        grid-column: span 2;
-        width: 227px;
-    }
+    border: none;
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  button:active {
+    transform: translateY(3px);
+  }
+  .span--two {
+    grid-column: span 2;
+    width: 227px;
+  }
 }
 
 .theme--1 {
-    background-color: $c-thm1-background;
-    .txt-calc {
-        color: $c-white;
+  background-color: $c-thm1-background;
+  .txt-calc {
+    color: $c-white;
+  }
+  .txt-theme {
+    color: $c-white;
+  }
+  .theme--select--number {
+    color: $c-white;
+  }
+  .output--box {
+    background-color: $c-sec;
+    color: $c-white;
+    .input--value--exp {
+      color: $c-white;
     }
-    .txt-theme {
-        color: $c-white;
+  }
+  .input--box {
+    background-color: $c-main;
+    button {
+      color: $c-pri-btn-txt;
+      background-color: $c-pri-btn-bg;
+      box-shadow: 0px -4px 0px 0px $c-pri-btn-bs inset;
     }
-    .theme--select--number {
-        color: $c-white;
+    button:active {
+      background-color: $c-pri-btn-bg-act;
     }
-    .output--box {
-        background-color: $c-sec;
-        color: $c-white;
-        .input--value--exp {
-            color: $c-white;
-        }
+    .sec--btn {
+      color: $c-white;
+      background-color: $c-sec-btn-bg;
+      box-shadow: 0px -4px 0px 0px $c-sec-btn-bs inset;
     }
-    .input--box {
-        background-color: $c-main;
-        button {
-            color: $c-pri-btn-txt;
-            background-color: $c-pri-btn-bg;
-            box-shadow: 0px -4px 0px 0px $c-pri-btn-bs inset;
-        }
-        button:active {
-            background-color: $c-pri-btn-bg-act;
-        }
-        .sec--btn {
-            color: $c-white;
-            background-color: $c-sec-btn-bg;
-            box-shadow: 0px -4px 0px 0px $c-sec-btn-bs inset;
-        }
-        .sec--btn:active {
-            background-color: $c-sec-btn-bg-act;
-        }
-        .equal--btn {
-            background-color: $c-ter-btn-bg;
-            color: $c-white;
-            box-shadow: 0px -4px 0px 0px $c-ter-btn-bs inset;
-        }
-        .equal--btn:active {
-            background-color: $c-ter-btn-bg-act;
-        }
+    .sec--btn:active {
+      background-color: $c-sec-btn-bg-act;
     }
+    .equal--btn {
+      background-color: $c-ter-btn-bg;
+      color: $c-white;
+      box-shadow: 0px -4px 0px 0px $c-ter-btn-bs inset;
+    }
+    .equal--btn:active {
+      background-color: $c-ter-btn-bg-act;
+    }
+  }
 }
 
 .theme--2 {
-    background-color: $c-thm2-background;
-    .txt-calc .txt-theme .theme--select--number {
-        color: $c-thm2--pri-btn-txt;
+  background-color: $c-thm2-background;
+  .txt-calc .txt-theme .theme--select--number {
+    color: $c-thm2--pri-btn-txt;
+  }
+  .output--box {
+    background-color: $c-thm2-sec;
+    color: $c-white;
+    .input--value--exp {
+      color: $c-thm2--pri-btn-txt;
     }
-    .output--box {
-        background-color: $c-thm2-sec;
-        color: $c-white;
-        .input--value--exp {
-            color: $c-thm2--pri-btn-txt;
-        }
-        .output--value {
-            color: $c-thm2--pri-btn-txt;
-        }
+    .output--value {
+      color: $c-thm2--pri-btn-txt;
     }
-    .input--box {
-        background-color: $c-thm2-main;
-        button {
-            color: $c-thm2--pri-btn-txt;
-            background-color: $c-thm2-pri-btn-bg;
-            box-shadow: 0px -4px 0px 0px $c-thm2-pri-btn-bs inset;
-        }
-        button:active {
-            background-color: $c-thm2-pri-btn-act;
-        }
-        .sec--btn {
-            color: $c-white;
-            background-color: $c-thm2-sec-btn-bg;
-            box-shadow: 0px -4px 0px 0px $c-thm2-sec-btn-bs inset;
-        }
-        .sec--btn:active {
-            background-color: $c-thm2-sec-btn-act;
-        }
-        .equal--btn {
-            color: $c-white;
-            background-color: $c-thm2-ter-btn-bg;
-            box-shadow: 0px -4px 0px 0px $c-thm2-ter-btn-bs inset;
-        }
-        .equal--btn:active {
-            background-color: $c-thm2-ter-btn-act;
-        }
+  }
+  .input--box {
+    background-color: $c-thm2-main;
+    button {
+      color: $c-thm2--pri-btn-txt;
+      background-color: $c-thm2-pri-btn-bg;
+      box-shadow: 0px -4px 0px 0px $c-thm2-pri-btn-bs inset;
     }
+    button:active {
+      background-color: $c-thm2-pri-btn-act;
+    }
+    .sec--btn {
+      color: $c-white;
+      background-color: $c-thm2-sec-btn-bg;
+      box-shadow: 0px -4px 0px 0px $c-thm2-sec-btn-bs inset;
+    }
+    .sec--btn:active {
+      background-color: $c-thm2-sec-btn-act;
+    }
+    .equal--btn {
+      color: $c-white;
+      background-color: $c-thm2-ter-btn-bg;
+      box-shadow: 0px -4px 0px 0px $c-thm2-ter-btn-bs inset;
+    }
+    .equal--btn:active {
+      background-color: $c-thm2-ter-btn-act;
+    }
+  }
 }
 
 .theme--3 {
-    background-color: $c--thm3--background;
-    .txt-calc,
-    .txt-theme,
-    .theme--select--number {
-        color: $c--thm3--pri--btn--txt;
+  background-color: $c--thm3--background;
+  .txt-calc,
+  .txt-theme,
+  .theme--select--number {
+    color: $c--thm3--pri--btn--txt;
+  }
+  .output--box {
+    background-color: $c--thm3--sec;
+    color: $c-white;
+    .input--value--exp {
+      color: $c--thm3--pri--btn--txt;
     }
-    .output--box {
-        background-color: $c--thm3--sec;
-        color: $c-white;
-        .input--value--exp {
-            color: $c--thm3--pri--btn--txt;
-        }
-        .output--value {
-            color: $c--thm3--pri--btn--txt;
-        }
+    .output--value {
+      color: $c--thm3--pri--btn--txt;
     }
-    .input--box {
-        background-color: $c--thm3--main;
-        button {
-            color: $c--thm3--pri--btn--txt;
-            background-color: $c--thm3--pri--btn--bg;
-            box-shadow: 0px -4px 0px 0px $c--thm3--pri--btn--bs inset;
-        }
-        button:active {
-            background-color: $c--thm3--pri--btn--act;
-        }
-        .sec--btn {
-            color: $c-white;
-            background-color: $c--thm3--sec--btn--bg;
-            box-shadow: 0px -4px 0px 0px $c--thm3--sec--btn--bs inset;
-        }
-        .sec--btn:active {
-            background-color: $c--thm3--sec--btn--act;
-        }
-        .equal--btn {
-            color: $c-white;
-            background-color: $c--thm3--ter--btn--bg;
-            box-shadow: 0px -4px 0px 0px $c--thm3--ter--btn--bs inset;
-        }
-        .equal--btn:active {
-            background-color: $c--thm3--ter--btn--act;
-        }
+  }
+  .input--box {
+    background-color: $c--thm3--main;
+    button {
+      color: $c--thm3--pri--btn--txt;
+      background-color: $c--thm3--pri--btn--bg;
+      box-shadow: 0px -4px 0px 0px $c--thm3--pri--btn--bs inset;
     }
+    button:active {
+      background-color: $c--thm3--pri--btn--act;
+    }
+    .sec--btn {
+      color: $c-white;
+      background-color: $c--thm3--sec--btn--bg;
+      box-shadow: 0px -4px 0px 0px $c--thm3--sec--btn--bs inset;
+    }
+    .sec--btn:active {
+      background-color: $c--thm3--sec--btn--act;
+    }
+    .equal--btn {
+      color: $c-white;
+      background-color: $c--thm3--ter--btn--bg;
+      box-shadow: 0px -4px 0px 0px $c--thm3--ter--btn--bs inset;
+    }
+    .equal--btn:active {
+      background-color: $c--thm3--ter--btn--act;
+    }
+  }
 }
 
-@media(min-width: 576px) {
-    .calculator {
-        width: 540px;
-        height: auto;
-    }
+@media (min-width: 576px) {
+  .calculator {
+    width: 540px;
+    height: auto;
+  }
 }
 
-@media(max-width: 575px) {
-    body {
-        // height: 100vh;
+@media (max-width: 575px) {
+  body {
+    // height: 100vh;
+  }
+  .calculator {
+    margin-top: 20px;
+    width: 327px;
+  }
+  .output--box {
+    margin-top: 10px;
+  }
+  .input--box {
+    margin-top: 10px;
+    grid-template-columns: repeat(4, 65px);
+    button {
+      height: 64px;
+      width: 60px;
     }
-    .calculator {
-        margin-top: 20px;
-        width: 327px;
+    .span--two {
+      grid-column: span 2;
+      width: 113px;
     }
-    .output--box {
-        margin-top: 10px;
-    }
-    .input--box {
-        margin-top: 10px;
-        grid-template-columns: repeat(4, 65px);
-        button {
-            height: 64px;
-            width: 60px;
-        }
-        .span--two {
-            grid-column: span 2;
-            width: 113px;
-        }
-    }
+  }
 }
