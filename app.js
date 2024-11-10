@@ -24,35 +24,81 @@ function themeswitch(e) {
   }
 }
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const buttonText = button.textContent;
-
-    if (buttonText === "Del") {
-      currentInput = currentInput.slice(0, -1);
-      inputExp.textContent = currentInput || "0";
-    } else if (buttonText === "Reset") {
-      currentInput = "";
-      inputExp.textContent = "0";
-      outputValue.textContent = "0";
-    } else if (buttonText === "=") {
+// event listeners
+document.addEventListener("DOMContentLoaded", () => {
+  // handling keyboard input
+  document.addEventListener("keydown", (e) => {
+    // handle numbers and decimal
+    if (/^[0-9.]$/.test(e.key)) {
+      e.preventDefault();
+      handleInput(e.key);
+    }
+    // handle operators
+    else if (["+", "-", "*", "/"].includes(e.key)) {
+      e.preventDefault();
+      const operator = e.key === "*" ? "x" : e.key;
+      handleInput(operator);
+    }
+    // enter for equals
+    else if (e.key === "Enter") {
+      e.preventDefault();
       calculate();
-    } else {
-      if (currentInput === "0" && !isOperator(buttonText)) {
-        currentInput = buttonText;
-      } else {
-        const lastChar = currentInput[currentInput.length - 1];
-        if (
-          !(isOperator(buttonText) && isOperator(lastChar)) &&
-          !(buttonText === "." && lastChar === ".")
-        ) {
-          currentInput += buttonText;
-        }
-      }
-      inputExp.textContent = currentInput;
+    }
+    // backspace for delete
+    else if (e.key === "Backspace") {
+      e.preventDefault();
+      handleDelete();
+    }
+    // escape for reset
+    else if (e.key === "Escape") {
+      e.preventDefault();
+      handleReset();
     }
   });
+
+  // button click handling
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const buttonText = button.textContent;
+
+      if (buttonText === "Del") {
+        handleDelete();
+      } else if (buttonText === "Reset") {
+        handleReset();
+      } else if (buttonText === "=") {
+        calculate();
+      } else {
+        handleInput(buttonText);
+      }
+    });
+  });
 });
+
+function handleDelete() {
+  currentInput = currentInput.slice(0, -1);
+  inputExp.textContent = currentInput || "0";
+}
+
+function handleReset() {
+  currentInput = "";
+  inputExp.textContent = "0";
+  outputValue.textContent = "0";
+}
+
+function handleInput(value) {
+  if (currentInput === "0" && !isOperator(value)) {
+    currentInput = value;
+  } else {
+    const lastChar = currentInput[currentInput.length - 1];
+    if (
+      !(isOperator(value) && isOperator(lastChar)) &&
+      !(value === "." && lastChar === ".")
+    ) {
+      currentInput += value;
+    }
+  }
+  inputExp.textContent = currentInput;
+}
 
 function isOperator(char) {
   return ["+", "-", "x", "/"].includes(char);
